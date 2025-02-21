@@ -1,0 +1,100 @@
+.exposition-container {
+  margin: 4rem 0;
+  padding: 3rem 0;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.exposition-text {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-color: #ffffff;
+}
+
+.exposition-text h2 {
+  color: #000000 !important;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: 'Instrument Serif', serif;
+}
+
+.text-content {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #000000 !important;
+  background-color: #ffffff;
+}
+
+.conjugation {
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+.signature {
+  margin-top: 4rem;
+  text-align: right;
+  font-style: italic;
+}
+
+.text-content p {
+  color: #000000 !important;
+  margin-bottom: 1.5rem;
+}
+
+.exposition-logos {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.exposition-logo {
+  height: 60px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.exposition-logo:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .exposition-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+
+  .exposition-text {
+    padding: 0 1rem;
+  }
+
+  .text-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .exposition-logos {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .exposition-logo {
+    height: 50px;
+  }
+} 

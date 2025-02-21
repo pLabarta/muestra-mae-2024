@@ -1,0 +1,32 @@
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--color-white);
+}
+
+.about-page section {
+  margin-bottom: 3rem;
+}
+
+.about-page h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.credits-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.credits-group span {
+  color: var(--color-gold);
+  margin-right: 0.5rem;
+}
+
+.organizacion {
+  margin-top: 4rem;
+  font-style: italic;
+  opacity: 0.9;
+} 
