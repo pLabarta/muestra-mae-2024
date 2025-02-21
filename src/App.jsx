@@ -168,7 +168,7 @@ function App() {
           <h1>La Pulsión de lo Errático</h1>
           <nav>
             <Link to="/">Obras</Link>
-            <Link to="/about">Acerca de</Link>
+            <Link to="/about">Info</Link>
           </nav>
         </header>
 
@@ -187,6 +187,9 @@ function App() {
         </Routes>
 
         <footer>
+          <a href="/catalogo.pdf" download className="download-catalog">
+            Descargar Catálogo PDF
+          </a>
           <div className="footer-logos">
             <a 
               href="https://www.instagram.com/mae_untref/" 
