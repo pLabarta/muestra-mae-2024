@@ -186,10 +186,13 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
 
-        <footer>
+        <div className="catalog-section">
           <a href="/catalogo.pdf" download className="download-catalog">
-            Descargar Catálogo PDF
+            Descargar Catálogo
           </a>
+        </div>
+
+        <footer>
           <div className="footer-logos">
             <a 
               href="https://www.instagram.com/mae_untref/" 

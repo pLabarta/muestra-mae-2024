@@ -166,9 +166,14 @@ p.description {
   padding: 0 2rem;
 }
 
+.catalog-section {
+  margin: 4rem 0 8rem 0;
+  text-align: center;
+  padding: 4rem 0;
+}
+
 .download-catalog {
   display: inline-block;
-  margin-bottom: 3rem;
   padding: 1rem 2rem;
   background-color: transparent;
   color: var(--color-white);
@@ -182,5 +187,17 @@ p.description {
 .download-catalog:hover {
   background-color: var(--color-white);
   color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+  .catalog-section {
+    margin: 2rem 0 4rem 0;
+    padding: 2rem 0;
+  }
+
+  .download-catalog {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
 }
 
