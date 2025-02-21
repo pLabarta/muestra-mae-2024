@@ -165,7 +165,7 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <header>
-          <h1>La Pulsión de lo Errático</h1>
+          <h1>LA PULSIÓN DE LO ERRÁTICO</h1>
           <nav>
             <Link to="/">Obras</Link>
             <Link to="/about">Info</Link>
