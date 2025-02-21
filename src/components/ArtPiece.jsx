@@ -7,6 +7,21 @@ export default function ArtPiece({ piece }) {
   const imagePath = `/artworks/${piece.id}/${piece.coverImage}`;
   console.log('Trying to load image from:', imagePath);
 
+  const formatAuthors = (authors) => {
+    if (!authors) return '';
+    if (authors.length === 1) return authors[0];
+    
+    // Check if last author starts with 'I'
+    const lastAuthor = authors[authors.length - 1];
+    const conjunction = lastAuthor.startsWith('I') ? 'e' : 'y';
+    
+    if (authors.length === 2) {
+      return `${authors[0]} ${conjunction} ${authors[1]}`;
+    }
+    
+    return authors.slice(0, -1).join(', ') + ` ${conjunction} ${lastAuthor}`;
+  };
+
   return (
     <article className="art-piece">
       <div className="art-piece-header">
@@ -22,7 +37,8 @@ export default function ArtPiece({ piece }) {
                 }
               </span>
               {index < piece.authors.length - 2 && ", "}
-              {index === piece.authors.length - 2 && " y "}
+              {index === piece.authors.length - 2 && 
+                (piece.authors[piece.authors.length - 1].startsWith('I') ? " e " : " y ")}
             </span>
           ))}
         </div>
